@@ -2,10 +2,20 @@ public class Person {
 
     private String name;
     private int age;
+    private double long1;
 
-    public Person(String name, int age) {
+    public Person(String name, int age, double long1) {
         this.name = name;
         this.age = age;
+        this.long1 = long1;
+    }
+
+    public double getLong1() {
+        return long1;
+    }
+
+    public void setLong1(double long1) {
+        this.long1 = long1;
     }
 
     public String getName() {
@@ -29,6 +39,7 @@ public class Person {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", long1=" + long1 +
                 '}';
     }
 }
